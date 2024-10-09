@@ -3,43 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Website</title>
+    <title>Simple Header with Hero Section</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="container">
-            <div class="left">
-                <span>Bengaluru, Karnataka, India</span>
-                <span> | Office Hours: 9:00 AM - 5:30 PM</span>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="top-bar">
+            <div class="left-content">
+                <p>Talk to Sales: <a href="mailto:support@zidio.in">support@zidio.in</a></p>
             </div>
-            <div class="right">
-                <span>Email: support@zidio.in</span>
-                <span class="social-icons">
-                    <a href="#" aria-label="Facebook">FB</a>
-                    <a href="#" aria-label="Twitter">TW</a>
-                    <a href="#" aria-label="LinkedIn">IN</a>
-                </span>
+            <div class="right-content">
+                <p>Office Hours: 9:00 AM - 5:30 PM | Bengaluru, Karnataka, India</p>
+                <div class="country-select">
+                    <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="uk">UK</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
-    <header class="main-header">
-        <div class="container">
+
+        <!-- Main Header -->
+        <div class="main-header" id="main-header">
             <div class="logo">
-                <h1>Company Logo</h1>
+                <img src="assets/css/images/zidio (1).png" alt="Logo">
             </div>
-            <nav>
+            <nav class="navigation">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
                     <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#" class="write-us-btn">Write to Us</a></li>
                 </ul>
-            </nav>
+            </nav> 
+            <div class="search-contact">
+                <img src="assets/css/images/icons8-search-24.png" alt="Search Icon" class="search-icon" id="search-icon">
+                <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+                <button class="contact-btn">Talk to sales</button>
+            </div>
         </div>
     </header>
-    <h1>Welcome to the Company Website</h1>
-</body>
-</html>
+    <footer class="footer">
+        <!-- Logo in the center -->
+        <div class="footer-logo">
+            <img src="assets/css/images/zidio - Copy.png" alt="Zidio Development Logo">
+        </div>
+    
+        <!-- Footer Content with 4 Columns -->
+        <div class="footer-content">
+            <!-- Explore Services Column -->
+            <div class="footer-column">
+                <h4>Explore Services</h4>
+                <ul>
+                    <li><a href="#">IT Solutions</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Cloud Services</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                </ul>
+    
+                <!-- Social Media Links -->
+                <div class="social-media">
+                    <a href="#"><img src="assets/css/images/icons8-facebook-48(1).png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/css/images/icons8-twitter-48.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/css/images/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/css/images/icons8-instagram-48(1).png" alt="Instagram"></a>
+                </div>
+            </div>
+    
+            <!-- Overview Column -->
+            <div class="footer-column">
+                <h4>Overview</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <!-- Community Column -->
+            <div class="footer-column">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+    
+            <!-- New Column with Send E-Mail Button and Newsletter -->
+            <div class="footer-column">
+                <div class="email-button-container">
+                    <a href="mailto:support@zidio.in" class="email-button">
+                        <img src="assets/css/images/icons8-email-100.png" alt="Email Icon" class="email-icon">
+                        <div class="email-text">
+                            <span class="email-title">Send E-Mail</span>
+                            <span class="email-address">support@zidio.in</span>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Newsletter Section -->
+                <div class="newsletter-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Zidio Development | All Rights Reserved</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+    </html>
