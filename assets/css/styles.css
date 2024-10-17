@@ -123,6 +123,94 @@ body {
     display: inline-block;
 }
 
+/* hero section */
+
+body {
+    font-family: 'Archivo', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content {
+    text-align: left;
+}
+
+
+.content h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-top: 5px;
+}
+
+
+.content h2 {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.marker-purple {
+    color: #8980f5;
+}
+
+
+.para {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    transition: 0.5s;
+    margin-top: 20px;
+ 
+}
+
+.back-video {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    filter: brightness(30%);
+    z-index: -1;  
+    }
+
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+.cta-button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 40px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color:#3e4095;
+}
+
+
 /* Footer General Styles */
 .footer {
     background-color: black;
