@@ -60,6 +60,113 @@
     <!-- Team Member: Pavan Nayak -->
     <section class="services-section">
         <!-- Add code for Services Section here -->
+         <!DOCTYPE html>
+<html>
+<head>
+  <title>Zidio Development - Services</title>
+  <style>
+    #services {
+      text-align: center;
+      padding: 50px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .service-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .service {
+      width: 300px;
+      margin-bottom: 40px;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .service img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .service h3 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .service p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service">
+        <img src="https://miro.medium.com/v2/resize:fit:1200/0*M4bxiCIjcTK-2Xr6.jpeg" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>Create stunning and functional websites.</p>
+      </div>
+      <div class="service">
+        <img src="https://riseuplabs.com/wp-content/uploads/2021/07/mobile-application-development-guidelines-riseuplabs.jpg" alt="Mobile App Development">
+        <h3>Mobile App Development</h3>
+        <p>Develop innovative mobile apps for iOS and Android.</p>
+      </div>
+      <div class="service">
+        <img src="https://www.mindinventory.com/blog/wp-content/uploads/2023/11/difference-between-ui-ux.webp" alt="UI/UX Design">
+        <h3>UI/UX Design</h3>
+        <p>Design intuitive and visually appealing user interfaces.</p>
+      </div>
+      <div class="service">
+        <img src="https://www.reliablesoft.net/wp-content/uploads/2023/03/digital-marketing-definition-new.png" alt="Digital Marketing">
+        <h3>Digital Marketing</h3>
+        <p>Enhance your online presence through effective digital marketing.</p>
+      </div>
+      <div class="service">
+        <img src="https://ewm.swiss/application/files/9615/8264/8028/Sans_titre-12.jpg" alt="Graphic Design">
+        <h3>Graphic Design</h3>
+        <p>A technique used in design to identify and understand the most important words and phrases related to a project or brand.</p>
+      </div>
+      <div class="service">
+        <img src="https://www.finoit.com/wp-content/uploads/2017/07/benefits-of-cloud-based-solutions.png" alt="Cloud Solutions">
+        <h3>Cloud Solutions</h3>
+        <p>Deliver scalable cloud solutions to enhance your business’s flexibility and operational efficiency.</p>
+      </div>
+      <div class="service">
+        <img src="https://www.raxatechnosecuritysolutions.in/assets/img/Cyber-Security_Banner.jpg" alt="Cyber Security">
+        <h3>Cyber Security</h3>
+        <p>Safeguard your digital assets with robust cybersecurity solutions tailored to protect against emerging threats.</p>
+    </div>
+    <div class="service">
+        <img src="https://osswalinfo.com/wp-content/uploads/2024/06/How-To-Take-Your-Data-Analytics-Approach-To-The-Next-Level-in-2023.jpg" alt="Data Analytic">
+        <h3>Data Analytic</h3>
+        <p>Transform raw data into valuable insights, enabling informed and strategic business decisions.</p>
+    </div>
+  </section>
+
+  <script>
+
+    const services = document.querySelectorAll('.service');
+
+    services.forEach(service => {
+      service.addEventListener('mouseover', () => {
+        service.style.transform = 'scale(1.05)';
+      });
+
+      service.addEventListener('mouseout', () => {
+        service.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>
 
 
 
