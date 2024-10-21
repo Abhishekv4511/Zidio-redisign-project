@@ -59,7 +59,9 @@
     <!-- What We Are Offering (Services Section) -->
     <!-- Team Member: Pavan Nayak -->
     <section class="services-section">
-        <!-- Add code for Services Section here -->\
+        <!-- Add code for Services Section here -->
+
+
 
 
 
@@ -67,8 +69,91 @@
 
     <!-- About Achievement of the Company -->
     <!-- Team Member: Nitish Kumar -->
-    <section class="achievement-section">
-        <!-- Add code for Achievement Section here -->
+    <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Zidio Development - Achievements</title>
+          <style>
+            #achievements {
+              text-align: center;
+              padding: 50px;
+            }
+        
+            h2 {
+              font-size: 36px;
+              margin-bottom: 30px;
+            }
+        
+            .achievement-container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+            }
+        
+            .achievement {
+              width: 300px;
+              margin-bottom: 40px;
+              text-align: center;
+              box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        
+            .achievement img {
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+            }
+        
+            .achievement h3 {
+              font-size: 24px;
+              margin-top: 20px;
+            }
+        
+            .achievement p {
+              font-size: 16px;
+              margin: 10px 0;
+            }
+          </style>
+        </head>
+        <body>
+          <section id="achievements">
+            <h2>Our Achievements</h2>
+            <div class="achievement-container">
+              <div class="achievement">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240202114016/Web-Development-Project-Ideas.webp" alt="Achievement 1">
+                <h3>Award for Excellence in Web Development</h3>
+                <p>Awarded for outstanding web development projects.</p>
+              </div>
+              <div class="achievement">
+                <img src="https://thumbs.dreamstime.com/b/client-service-concept-manager-click-virtual-button-58203786.jpg" alt="Achievement 2">
+                <h3>Client Satisfaction Award</h3>
+                <p>Recognized for providing exceptional client service.</p>
+              </div>
+              <div class="achievement">
+                <img src="https://t4.ftcdn.net/jpg/02/38/40/55/360_F_238405533_yyX4K55OmH2LiM7LQ01ITn6kl0b6J6K8.jpg" alt="Achievement 3">
+                <h3>Fastest Growing Tech Startup</h3>
+                <p>Ranked among the top tech startups in the industry.</p>
+              </div>
+            </div>
+          </section>
+        
+          <script>
+            // Add interactive elements or animations here using JavaScript
+            // For example, you could add a hover effect to the achievement cards:
+        
+            const achievements = document.querySelectorAll('.achievement');
+        
+            achievements.forEach(achievement => {
+              achievement.addEventListener('mouseover', () => {
+                achievement.style.transform = 'scale(1.05)';
+              });
+        
+              achievement.addEventListener('mouseout', () => {
+                achievement.style.transform = 'scale(1)';
+              });
+            });
+          </script>
+        </body>
+        </html>
 
 
 
